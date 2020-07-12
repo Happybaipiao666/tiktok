@@ -132,7 +132,7 @@ CN url 307 KR
 ^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
 # > 电视家
 ^https?+:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject-200
-https://raw.githubusercontent.com/anliya1/icon/master/1234.txt
+(?<=\?version_code=)\d{2}.. url 307 1024413080
 # ＞ 毒
 ^https?+:\/\/app\.poizon\.com\/api\/v1\/app\/advertisement\/adv\/ url reject-200
 # E
