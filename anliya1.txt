@@ -1,2 +1,218 @@
+CN url 307 KR
+# script
+# 阿里
+^https?+:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch url response-body .+ response-body eyJjYXJyaWVyIjoiIiwiY2xpZW50SXNwIjoiIiwiY29kZSI6MTAwMCwiY3YiOjEsImRucyI6W3siYWlzbGVzIjpbXSwiaG9zdCI6IiIsImlwcyI6W10sInN0cmF0ZWdpZXMiOltdLCJ0dGwiOjMwMH1dLCJpcCI6IiIsInVpZCI6IiIsInVuaXQiOiIifQ==
+^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alimama\.etao\.config\.query\/ url response-body "ems_etao_advertise" response-body ""
+
+
+# Tide.list
+# Strong Stain Removal
+# 0~9
+# > 21经济
+^https?+:\/\/api\.21jingji\.com\/ad\/ url reject-200
+# > 360doc
+^https?+:\/\/mobi\.360doc\.com\/v\d{2}\/Ajax\/festival\.ashx\?op=getfestivaltheme url reject-200
+# > 55海淘
+^https?+:\/\/appv6\.55haitao\.com\/IflyAd\/getAd url reject-200
+# > 58同城
+^https?+:\/\/app\.58\.com\/api\/home\/a(?>dvertising|ppadv)\/ url reject-200
+^https?+:\/\/app\.58\.com\/api\/home\/invite\/popupAdv url reject-200
+^https?+:\/\/app\.58\.com\/api\/log\/ url reject-200
+^https?+:\/\/.+?\.58cdn\.com\.cn\/brandads\/ url reject-200
+
+# A
+# > 阿里
+^https?+:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.tmall\.wireless url reject-200
+# >> 1688
+^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.alibaba\.advertisementservice\.getadv url reject-200
+# >> 飞猪
+^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.activity\.querytmsresources\/ url reject-200
+# >> 淘宝
+^https?+:\/\/(?>heic|gw)\.alicdn\.com\/tfs\/TB1.+?-\d{4}-\d{4}\.jpg_1200x1200q90\.jpg_\.\w{3,4}+$ url reject-200
+^https?+:\/\/heic\.alicdn\.com\/tps\/i4\/.+?\.jpg_1200x1200q90\.jpg_\.heic$ url reject-200
+^https?+:\/\/gw\.alicdn\.com\/tfs\/.+?\d{4}-\d{4}\/[a-z]{3}$ url reject-200
+# >> 淘票票
+^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryadvertise\/ url reject-200
+# >> 口碑
+^https?+:\/\/render\.alipay\.com\/p\/s\/h5data\/prod\/spring-festival-2019-h5data\/popup-h5data\.json url reject-200
+^https?+:\/\/acs\.m\.taobao\.com\/gw\/mtop\.o2o\.ad\.gateway\.get\/ url reject-200
+# >> 高德地图
+^https?+:\/\/m\d\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\/ url reject-200
+# >> 天猫
+^https?+:\/\/gw\.alicdn\.com\/tfs\/TB1.+?750-\d{4} url reject-200
+# >> 优酷
+^https?+:\/\/.+?\.mp4\?ccode=0902 url reject-200
+^https?+:\/\/.+?\.mp4\?sid= url reject-200
+^https?+:\/\/vali\.cp31\.ott\.cibntv\.net\/youku\/.+?\.mp4\?sid= url reject-200
+# > AcFun
+^https?+:\/\/aes\.acfun\.cn\/s\?adzones url reject-200
+# > 爱回收
+^https?+:\/\/gw\.aihuishou\.com\/app-portal\/home\/getadvertisement url reject-200
+# > 爱思助手
+^https?+:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml url reject-200
+# > APICloud
+^https?+:\/\/a\.apicloud\.com\/start_page\/ url reject-200
+# B
+# > 百度
+# >> 百度网盘
+^https?+:\/\/pan\.baidu\.com\/rest\/2\.0\/pcs\/adx url reject-200
+^https?+:\/\/pan\.baidu\.com\/act\/api\/activityentry url reject-200
+^https?+:\/\/issuecdn\.baidupcs\.com\/issue\/netdisk\/guanggao\/ url reject-200
+# >> 百度贴吧
+^https?+:\/\/c\.tieba\.baidu\.com\/c\/s\/splashSchedule url reject-200
+^https?+:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/getAdInfo url reject-200
+^https?+:\/\/c\.tieba\.baidu\.com\/\w+?\/\w+?\/(?>sync|newRnSync|mlog) url reject-200
+# >> 百度地图
+^https?+:\/\/ss0\.bdstatic\.com/.+?_\d{3}_\d{4}\.jpg url reject-200
+# >> 爱奇艺
+^https?+:\/\/iface\.iqiyi\.com\/api\/getNewAdInfo url reject-200
+^https?+:\/\/.+?\/(?>mixer|track2)\? url reject-200
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/show\.do url reject-200
+^https?+:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show url reject-200
+# > 哔哩哔哩
+^https?+:\/\/app\.bilibili\.com\/x\/v\d\/splash\/ url reject-200
+^https?+:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/Flash url reject-200
+# > 抱抱
+^https?+:\/\/www\.myhug\.cn\/ad\/ url reject-200
+# > 百词斩
+^https?+:\/\/7n\.bczcdn\.com\/launchad\/ url reject-200
+# > 贝太厨房
+^https?+:\/\/channel\.beitaichufang\.com\/channel\/api\/v\d\/promote\/ios\/start\/page url reject-200
+# > 币世界
+^https?+:\/\/iapi\.bishijie\.com\/actopen\/advertising\/ url reject-200
+# > 贝壳找房
+^https?+:\/\/app\.api\.ke\.com\/config\/config\/bootpage url reject-200
+# > 薄荷
+^https?+:\/\/status\.boohee\.com\/api\/v\d\/app_square\/start_up_with_ad url reject-200
+
+# C
+# > CNKI
+# >> 手机知网
+^https?+:\/\/xyz\.cnki\.net\/resourcev7\/api\/manualpush\/SlidsList$ url reject-200
+# > CNTV
+^https?+:\/\/cntv\.hls\.cdn\.myqcloud\.com\/.+?\?maxbr=850 url reject-200
+^https?+:\/\/asp\.cntv\.myalicdn\.com\/.+?\?maxbr=850 url reject-200
+^https?+:\/\/www\.cntv\.cn\/nettv\/adp\/ url reject-200
+^https?+:\/\/v\.cctv\.com\/.+?850 url reject-200
+# > CSDN
+^https?+:\/\/gw\.csdn\.net\/cms-app\/v2\/home_page\/open_advertisement url reject-200
+# > 车来了
+^https?+:\/\/api\.chelaile\.net\.cn\/adpub\/ url reject-200
+^https?+:\/\/api\.chelaile\.net\.cn\/goocity\/advert\/ url reject-200
+^https?+:\/\/pic\d\.chelaile\.net\.cn\/adv\/ url reject-200
+# > 曹操出行
+^https?+:\/\/cap\.caocaokeji\.cn\/advert-bss\/ url reject-200
+# > 财经
+^https?+:\/\/api\.caijingmobile\.com\/ad(?:vert)?+\/ url reject-200
+# > 超级课程表
+^https?+:\/\/.+?\/V\d\/splash\/getSplashV\d\.action url reject-200
+# > 超级星饭团
+^https?+:\/\/g\.cdn\.pengpengla\.com\/starfantuan\/boot-screen-info\/ url reject-200
+# > 超星学习通
+^https?+:\/\/learn\.chaoxing\.com\/apis\/service\/appConfig\? url reject-200
+
+# D
+# > 豆瓣
+^https?+:\/\/api\.douban\.com\/v\d\/app_ads\/ url reject-200
+# > 斗鱼
+^https?+:\/\/rtbapi\.douyucdn\.cn\/japi\/sign\/app\/getinfo url reject-200
+# > 当当
+^https?+:\/\/mapi\.dangdang\.com\/index\.php\?action=init url reject-200
+^https?+:\/\/e\.dangdang\.com\/.+?getDeviceStartPage url reject-200
+# > 蛋蛋赞
+^https?+:\/\/www\.dandanzan\.com\/res\/gdsefse\.js url reject-200
+# > 叨鱼
+^https?+:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd url reject-200
+# > 丁香医生
+^https?+:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject-200
+# > 嘀嗒出行
+^https?+:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getPreloaded url reject-200
+^https?+:\/\/res\.xiaojukeji\.com\/resapi\/activity\/getPasMultiNotices url reject-200
+^https?+:\/\/capis(?:-slb)?+\.didapinche\.com\/ad\/ url reject-200
+^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
+# > 电视家
+^https?+:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject-200
+# ＞ 毒
+^https?+:\/\/app\.poizon\.com\/api\/v1\/app\/advertisement\/adv\/ url reject-200
+(?<=\?version_code=)\d{2}.. url 307 1024413080
+# E
+# > 艺龙
+^https?+:\/\/mobile-api2011\.elong\.com\/ad(?>v|gateway) url reject-200
+# > e代驾
+^https?+:\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
+
+# F
+# > Foodie
+^https?+:\/\/foodie-api\.yiruikecorp\.com\/v\d\/(?>banner|notice)\/overview url reject-200
+# > FOTOABLE
+^https?+:\/\/cdn\.api\.fotoable\.com\/Advertise\/ url reject-200
+# > 飞客茶馆
+^https?+:\/\/www\.flyertea\.com\/source\/plugin\/mobile\/mobile\.php\?module=advis url reject-200
+# > 飞常准
+^https?+:\/\/app\.variflight\.com\/ad\/ url reject-200
+^https?+:\/\/app\.variflight\.com\/v\d\/advert\/ url reject-200
+# > 凤凰秀
+^https?+:\/\/dsa-mfp\.fengshows\.cn\/mfp\/mfpMultipleDelivery\.do\?.+?adunitid url reject-200
+
+# G
+# > Google
+# >> Youtube
+^https?+:\/\/.+?\.googlevideo\.com\/.+?(?>&oad|ctier) url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/api\/.+?ad url reject-200
+^https?+:\/\/\w+?\.youtube\.com\/p(?>agead|tracking) url reject-200
+^https?+:\/\/youtubei\.googleapis\.com\/youtubei\/.+?(?>ad|log)_ url reject-200
+# > Gofun
+^https?+:\/\/gateway\.shouqiev\.com\/fsda\/app\/bootImage\.json url reject-200
+# > 国泰君安
+^https?+:\/\/dl\.app\.gtja\.com\/dzswem\/kvController\/.+?\.jpg$ url reject-200
+
+# H
+# > 杭州公交
+^https?+:\/\/m\.ibuscloud\.com\/v2\/app\/getStartPage url reject-200
+# > 杭州市·市民卡
+^https?+:\/\/smkmp\.96225\.com\/smkcenter\/ad\/ url reject-200
+# > 虎扑
+^https?+:\/\/games\.mobileapi\.hupu\.com\/\d\/(?:\d\.){2}\d\/status\/init url reject-200
+# > 虎牙
+^https?+:\/\/business\.msstatic\.com\/advertiser\/ url reject-200
+^https?+:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/resource url reject-200
+# > 华住会
+^https?+:\/\/appapi\.huazhu\.com:\d{4}\/client\/app\/getAppStartPage\/ url reject-200
+# > 韩剧社
+^https?+:\/\/47\.97\.20\.12\/ad\/ url reject-200
+# > 火猫
+^https?+:\/\/api\.huomao\.com\/channels\/loginAd url reject-200
+# > HiveBox
+^https?+:\/\/consumer\.fcbox\.com\/v\d\/ad\/ url reject-200
+# > 好好住
+^https?+:\/\/api\.haohaozhu\.cn\/index\.php\/home\/AppInit\/getStartPhoto url reject-200
+# > 花生地铁
+^https?+:\/\/cmsapi\.wifi8\.com\/v\d\/(?>emptyAd|adNew)\/ url reject-200
+
+# I
+# > 讯飞
+^https?+:\/\/imeclient\.openspeech\.cn\/adservice\/ url reject-200
+# > 好体知
+^https?+:\/\/www\.bodivis\.com\.cn\/app\/splashAdvertise url reject-200
 (.*video_id=\w{32})(.*watermark=)(.*) url 307 $1
-(?<=\?version_code=)\d{2}.. url 307 $1白嫖
+# J
+# > 京东
+^https?+:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$ url reject-200
+^https?+:\/\/b?dsp-x\.jd\.com\/adx\/ url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/base\/na\/m\/adInfo url reject-200
+^https?+:\/\/ms\.jr\.jd\.com\/gw\/generic\/aladdin\/na\/m\/getLoadingPicture url reject-200
+# > 界面新闻
+^https?+:\/\/img\.jiemian\.com\/ads\/ url reject-200
+# > 驾校一点通
+^https?+:\/\/api\.jxedt\.com\/ad\/ url reject-200
+^https?+:\/\/richmanapi\.jxedt\.com\/api\/ad\/ url reject-200
+# > 驾考宝典
+^https?+:\/\/.+?\.kakamobi\.cn\/api\/open\/v\d\/advert-sdk\/ url reject-200
+# > 金山 WPS
+^https?+:\/\/ios\.wps\.cn\/ad-statistics-service url reject-200
+^https?+:\/\/mobile-pic\.cache\.iciba\.com\/feeds_ad\/ url reject-200
+^https?+:\/\/\w+?\.kingsoft-office-service\.com\/ad url reject-200
+# > 金山词霸
+^https?+:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(?>c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) url reject-200
+^https?+:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson url reject-200
+hostname = *.tiktokv.com,
