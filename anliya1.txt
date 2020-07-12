@@ -122,7 +122,7 @@ CN url 307 KR
 # > 蛋蛋赞
 ^https?+:\/\/www\.dandanzan\.com\/res\/gdsefse\.js url reject-200
 # > 叨鱼
-^https?+:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd url reject-200
+^https?+:\/\/daoyu\.sdo\.com\/api\/userCommon\/getAppStartAd url 307 https://daoyu.sdo.com/api/userCommon/getAppStartAd
 # > 丁香医生
 ^https?+:\/\/dxy\.com\/app\/i\/ask\/biz\/feed\/launch url reject-200
 # > 嘀嗒出行
@@ -139,7 +139,7 @@ CN url 307 KR
 # > 艺龙
 ^https?+:\/\/mobile-api2011\.elong\.com\/ad(?>v|gateway) url reject-200
 # > e代驾
-^https?+:\/\/pic\.edaijia\.cn\/adsplash\/ url reject-200
+^https?+:\/\/pic\.edaijia\.cn\/adsplash\/ url 307 www.baidu.com
 
 # F
 # > Foodie
