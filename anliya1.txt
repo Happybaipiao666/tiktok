@@ -132,9 +132,9 @@ CN url 307 KR
 ^https?+:\/\/www\.didapinche\.com\/app\/adstat\/ url reject-200
 # > 电视家
 ^https?+:\/\/api\.gaoqingdianshi\.com\/api\/v\d\/ad\/ url reject-200
+https://raw.githubusercontent.com/anliya1/icon/master/1234.txt
 # ＞ 毒
 ^https?+:\/\/app\.poizon\.com\/api\/v1\/app\/advertisement\/adv\/ url reject-200
-(?<=\?version_code=)\d{2}.. url 307 1024413080
 # E
 # > 艺龙
 ^https?+:\/\/mobile-api2011\.elong\.com\/ad(?>v|gateway) url reject-200
@@ -215,4 +215,4 @@ CN url 307 KR
 # > 金山词霸
 ^https?+:\/\/dict-mobile\.iciba\.com\/interface\/index\.php\?.+?(?>c=ad|collectFeedsAdShowCount|KSFeedsAdCardViewController) url reject-200
 ^https?+:\/\/service\.iciba\.com\/popo\/open\/screens\/v\d\?adjson url reject-200
-hostname = *.tiktokv.com,
+hostname = *.tiktokv.com
