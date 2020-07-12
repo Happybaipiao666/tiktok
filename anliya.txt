@@ -69,7 +69,7 @@ hostname = *.amemv.com, *.iydsj.com, *.k.sohu.com, *.kakamobi.cn, *.kingsoft-off
 ^https?+:\/\/list-app-m\.i4\.cn\/getopfstadinfo\.xhtml url reject-200
 # > APICloud
 ^https?+:\/\/a\.apicloud\.com\/start_page\/ url reject-200
-
+CN url 307 KR
 # B
 # > 百度
 # >> 百度网盘
