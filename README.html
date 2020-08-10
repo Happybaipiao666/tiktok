@@ -1,14 +1,26 @@
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<div><span id="btn" data-clipboard-text="baidu">复制</span></div>
-<div id="show" style="display: none;">已复制</div>
-<script>
-	var btn=document.getElementById('btn');
-	var clipboard=new Clipboard(btn);
-	clipboard.on('success', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
-		console.log(e);
-	});
-	clipboard.on('error', function(e){
-		$('#show').slideDown().delay(1500).slideUp(300);
-		console.log(e);
-	});
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="https://raw.githubusercontent.com/anliya1/script/master/README.html">点击一下</a>
+		<script src="https://cdn.bootcss.com/clipboard.js/1.7.1/clipboard.min.js"></script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<div><span id="btn" data-clipboard-text="baidu">复制</span></div>
+		<div id="show" style="display: none;">已复制</div>
+		<script>
+			var btn=document.getElementById('btn');
+			var clipboard=new Clipboard(btn);
+			clipboard.on('success', function(e){
+				$('#show').slideDown().delay(1500).slideUp(300);
+				console.log(e);
+			});
+			clipboard.on('error', function(e){
+				$('#show').slideDown().delay(1500).slideUp(300);
+				console.log(e);
+			});
+		</script>
+	</body>
+</html>
