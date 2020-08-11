@@ -1,1 +1,7 @@
-
+#>YouTube
+DOMAIN-SUFFIX, googlevideo.com, PROXY
+DOMAIN-SUFFIX, youtube.com, PROXY
+DOMAIN-SUFFIX, ggpht.com, PROXY
+DOMAIN-SUFFIX, ytimg.com, PROXY
+DOMAIN-SUFFIX, googleadservices.com, PROXY
+DOMAIN-SUFFIX, googleapis.com, PROXY
